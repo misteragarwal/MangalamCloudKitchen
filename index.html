@@ -11,10 +11,13 @@
         }
         #banner{
             height:100vh;
-            width: 100%;
+            width: 100vw;
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+        #front{
+            position: fixed;
 
         }
     </style>
@@ -22,7 +25,8 @@
 </head>
 <body>
     <div id="banner">
-        <img src="img.png" height="95%" width="auto">
+        <img src="back.png" height="100%" width="100%" id="back">
+        <img src="img.png" height="100%" width="auto" id="front">
     </div>
 </body>
 </html>
