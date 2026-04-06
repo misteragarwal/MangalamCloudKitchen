@@ -12,7 +12,7 @@ const slides = [
     description: "A royal feast with Pulao, Dal Makhni, Paneer, Naan, Roti, Sweets & more!",
     price: "₹250",
     highlight: "Best Seller",
-    image: "/menu/Maharajathali.png",
+    image: "/menu/Maharajathali.jpg",
   },
   {
     title: "Paneer Special",
@@ -26,7 +26,7 @@ const slides = [
     description: "Authentic Rajasthani Litti with spiced mashed vegetables",
     price: "₹100 / 5pc",
     highlight: "Traditional",
-    image: "/menu/litti.png",
+    image: "/menu/litti.jpg",
   },
   {
     title: "Dal Makhni",

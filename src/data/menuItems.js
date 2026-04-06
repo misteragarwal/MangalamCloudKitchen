@@ -64,7 +64,7 @@ export const menuItems = [
     price: 150,
     category: "vegetables",
     isPopular: false,
-    image: "/menu/allu-do-pyaza.png",
+    image: "/menu/allu-do-pyaza.jpg",
   },
   {
     id: "allu-dum",
@@ -73,7 +73,7 @@ export const menuItems = [
     price: 120,
     category: "vegetables",
     isPopular: false,
-    image: "/menu/aalu-dum.png",
+    image: "/menu/aalu-dum.jpg",
   },
   {
     id: "pakori-kadhi",
@@ -109,7 +109,7 @@ export const menuItems = [
     price: 120,
     category: "vegetables",
     isPopular: false,
-    image: "/menu/papad-mangori.png",
+    image: "/menu/papad-mangori.jpg",
   },
   {
     id: "seasonal-sabji",
@@ -118,7 +118,7 @@ export const menuItems = [
     price: 100,
     category: "vegetables",
     isPopular: false,
-    image: "/menu/seasonal.png",
+    image: "/menu/seasonal.jpg",
   },
   {
     id: "gatta-ki-subji",
@@ -315,7 +315,7 @@ export const menuItems = [
     price: 250,
     category: "thali",
     isPopular: true,
-    image: "/menu/Maharajathali.png",
+    image: "/menu/Maharajathali.jpg",
   },
 
   // ROTI
@@ -407,7 +407,7 @@ export const menuItems = [
     price: 50,
     category: "roti",
     isPopular: true,
-    image: "/menu/panner-kulcha.png",
+    image: "/menu/panner-kulcha.jpg",
   },
   {
     id: "kadhai-puri",
@@ -613,7 +613,7 @@ export const menuItems = [
     category: "starters",
     isPopular: false,
     unit: "/5pc",
-    image: "/menu/allu-litti.png",
+    image: "/menu/allu-litti.jpg",
   },
   {
     id: "sweet-corn-chaat",
