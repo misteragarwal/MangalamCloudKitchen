@@ -5,11 +5,6 @@ import { ChevronLeft, ChevronRight, Leaf } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 // Import slider images
-import thaliImage from "@/assets/slider/thali-special.jpg";
-import paneerImage from "@/assets/slider/paneer-special.jpg";
-import littiImage from "@/assets/slider/litti-chokha.jpg";
-import dalImage from "@/assets/slider/dal-makhani.jpg";
-import deliveryImage from "@/assets/slider/delivery.jpg";
 
 const slides = [
   {
@@ -17,35 +12,35 @@ const slides = [
     description: "A royal feast with Pulao, Dal Makhni, Paneer, Naan, Roti, Sweets & more!",
     price: "₹250",
     highlight: "Best Seller",
-    image: thaliImage,
+    image: "/menu/Maharajathali.png",
   },
   {
     title: "Paneer Special",
     description: "Choose from Kadhai Paneer, Sahi Paneer, Chilli Paneer & more",
     price: "From ₹160",
     highlight: "Fan Favorite",
-    image: paneerImage,
+    image:"/menu/paneer-spicy.jpeg" ,
   },
   {
     title: "Litti Chokha",
     description: "Authentic Rajasthani Litti with spiced mashed vegetables",
     price: "₹100 / 5pc",
     highlight: "Traditional",
-    image: littiImage,
+    image: "/menu/litti.png",
   },
   {
     title: "Dal Makhni",
     description: "Slow-cooked black lentils in rich buttery gravy",
     price: "₹130",
     highlight: "Creamy Delight",
-    image: dalImage,
+    image:"/menu/dalMakhni.jpg" ,
   },
   {
     title: "Free Delivery",
     description: "Get free home delivery on orders above ₹499 (upto 5km)",
     price: "Order Now!",
     highlight: "Special Offer",
-    image: deliveryImage,
+    image:"/menu/freedelivery.jpg" ,
   },
 ];
 

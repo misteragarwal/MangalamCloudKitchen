@@ -26,8 +26,15 @@ const PopularItems = () => {
           {popularItems.map((item) => (
             <div
               key={item.id}
-              className="group bg-card p-4 rounded-xl shadow-soft hover:shadow-card transition-all hover:-translate-y-1"
+              className="group bg-card p-2 rounded-xl shadow-soft hover:shadow-card transition-all hover:-translate-y-1"
             >
+              <div className="relative h-40 mb-1 rounded-lg overflow-hidden">
+                <img
+                   src={item.image}
+                   alt={item.name}
+                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                 />
+              </div>
               <div className="flex items-center gap-2 mb-2">
                 <span className="flex items-center justify-center w-4 h-4 border-2 border-forest-green rounded">
                   <div className="w-1.5 h-1.5 rounded-full bg-forest-green" />

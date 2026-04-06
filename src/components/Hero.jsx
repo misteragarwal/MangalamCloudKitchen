@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Leaf } from "lucide-react";
-import heroImage from "@/assets/hero-bg.jpg";
+import heroImage from "@/assets/hero.png";
 
 const Hero = () => {
   return (
@@ -13,29 +12,33 @@ const Hero = () => {
           alt="Delicious vegetarian cuisine"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-charcoal/90 via-charcoal/70 to-charcoal/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-charcoal/75 via-charcoal/00 to-charcoal/10" />
       </div>
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-20">
         <div className="max-w-2xl">
-          <span className="inline-flex items-center gap-2 px-4 py-2 bg-forest-green/90 text-white rounded-full text-sm font-medium mb-6 animate-fade-in">
-            <Leaf className="h-4 w-4" />
-            100% Pure Vegetarian
-          </span>
-          
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-primary-foreground mb-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
+          <h1
+            className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-primary-foreground mb-6 animate-fade-in"
+            style={{ animationDelay: "0.1s" }}
+          >
             Mangalam
             <br />
             <span className="text-golden-yellow">Cloud Kitchen</span>
           </h1>
-          
-          <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            Experience the authentic taste of homestyle vegetarian cuisine, 
+
+          <p
+            className="text-lg md:text-xl text-primary-foreground/80 mb-8 animate-fade-in"
+            style={{ animationDelay: "0.2s" }}
+          >
+            Experience the authentic taste of homestyle vegetarian cuisine,
             prepared with pure ghee and love, delivered fresh to your doorstep.
           </p>
-          
-          <div className="flex flex-wrap gap-4 animate-fade-in" style={{ animationDelay: "0.3s" }}>
+
+          <div
+            className="flex flex-wrap gap-4 animate-fade-in"
+            style={{ animationDelay: "0.3s" }}
+          >
             <Button variant="hero" size="xl" asChild>
               <Link to="/menu">Explore Menu</Link>
             </Button>
@@ -51,7 +54,10 @@ const Hero = () => {
           </div>
 
           {/* Stats */}
-          <div className="flex gap-8 mt-12 animate-fade-in" style={{ animationDelay: "0.4s" }}>
+          <div
+            className="flex gap-8 mt-12 animate-fade-in"
+            style={{ animationDelay: "0.4s" }}
+          >
             {[
               { value: "1000+", label: "Happy Customers" },
               { value: "70+", label: "Menu Items" },
@@ -61,7 +67,9 @@ const Hero = () => {
                 <div className="text-2xl md:text-3xl font-display font-bold text-golden-yellow">
                   {stat.value}
                 </div>
-                <div className="text-sm text-primary-foreground/70">{stat.label}</div>
+                <div className="text-sm text-primary-foreground/80">
+                  {stat.label}
+                </div>
               </div>
             ))}
           </div>

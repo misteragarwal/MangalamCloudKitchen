@@ -31,6 +31,9 @@ const Cart = () => {
   if (!selectedLocation) {
     deliveryCharge = 0;
     deliveryNote = "Select delivery location";
+  }else if(selectedLocation === "other"){
+    deliveryCharge = 0;
+    deliveryNote = "Variable Charge Applies";
   } else if (subtotal >= 999) {
     deliveryCharge = 0;
     deliveryNote = "Free delivery (Order above ₹999)";
@@ -46,7 +49,7 @@ const Cart = () => {
   const generateWhatsAppMessage = () => {
     if (cartItems.length === 0) return "";
 
-    let message = "🍛 *Order from Mangalam Cloud Kitchen*\n\n";
+    let message = "🍛 *Order for Mangalam Cloud Kitchen*\n\n";
     message += "*Items:*\n";
 
     cartItems.forEach((item) => {
@@ -182,7 +185,7 @@ const Cart = () => {
                       <div className="flex justify-between items-center w-full gap-4">
                         <span>{location.name}</span>
                         <span className="text-sm text-muted-foreground">
-                          {location.charge === 0 ? "Free" : `₹${location.charge}`}
+                          {location.charge === 0 ? "Variable" : `₹${location.charge}`}
                         </span>
                       </div>
                     </SelectItem>

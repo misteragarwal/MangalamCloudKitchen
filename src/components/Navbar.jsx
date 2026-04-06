@@ -3,6 +3,8 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ShoppingBag, Leaf } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { CartContext } from "@/App.jsx";
+import mkclogo from "@/assets/mkclogo.png";
+import cklogo from "@/assets/ck.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,22 +22,28 @@ const Navbar = () => {
   const isActive = (href) => location.pathname === href;
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md shadow-soft">
+    <nav className="fixed m-2 top-0 left-0 right-0 z-50 bg-card/100 backdrop-blur-md shadow-soft rounded-xl ">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="flex items-center justify-between h-14 md:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
-            <div className="flex items-center gap-1 bg-forest-green text-white text-xs px-2 py-1 rounded-full">
+          <div className="flex items-center gap-2 min-w-0">
+            <div className="flex items-center justify-center md:gap-3">
+              <img
+                src={mkclogo}
+                alt="Mangalam Cloud Kitchen"
+                className="h-12 md:h-16"
+              />
+              <img
+                src={cklogo}
+                alt="Mangalam Cloud Kitchen"
+                className="h-5 md:h-7"
+              /> 
+            </div> 
+            <div className="hidden sm:flex items-center gap-1 bg-forest-green text-white text-[10px] md:text-xs px-2 py-1 rounded-full whitespace-nowrap">
               <Leaf className="h-3 w-3" />
               <span className="font-medium">Pure Veg</span>
             </div>
-            <span className="text-xl md:text-2xl font-display font-bold text-gradient">
-              Mangalam
-            </span>
-            <span className="hidden sm:block text-sm text-muted-foreground font-medium">
-              Cloud Kitchen
-            </span>
-          </Link>
+          </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">

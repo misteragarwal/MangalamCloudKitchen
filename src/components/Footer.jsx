@@ -86,7 +86,7 @@ const Footer = () => {
         </div>
 
         {/* Delivery Info */}
-        <div className="py-4 border-t border-b border-primary-foreground/10 mb-8">
+        {/* <div className="py-4 border-t border-b border-primary-foreground/10 mb-8">
           <h4 className="font-semibold mb-3 text-center text-golden-yellow">Delivery Information</h4>
           <div className="flex flex-wrap justify-center gap-4 text-sm text-primary-foreground/70">
             <span>🛵 We deliver upto {businessInfo.delivery.maxDistance}</span>
@@ -95,13 +95,12 @@ const Footer = () => {
             <span>|</span>
             <span>✅ {businessInfo.delivery.freeUpTo10km.text}</span>
           </div>
-        </div>
+        </div> */}
 
         {/* Copyright */}
         <div className="text-center text-primary-foreground/50 text-sm">
           <p className="flex items-center justify-center gap-1">
-            Made with <Heart className="h-4 w-4 text-spice-red fill-spice-red" /> by
-            {businessInfo.name} © {currentYear}
+            Made with <Heart className="h-4 w-4 text-spice-red fill-spice-red" /> by <a href="https://www.linkedin.com/in/misteragarwal/">misteragarwal</a> © {currentYear}
           </p>
         </div>
       </div>
